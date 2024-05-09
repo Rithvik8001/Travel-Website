@@ -50,11 +50,17 @@ a {
 }
 
 button {
-  background: #ffcf00;
   border: 0.1rem solid;
   padding: 2rem 5rem;
-  border-radius: 3rem;
   cursor: pointer;
+  transition: background 0.6s ease-in;
+  border-radius: 5px;
+  background: none;
+  border-radius: 30px;
+}
+
+button:hover {
+  background: #ffcf00;
 }
 
 /* nav section */
@@ -97,6 +103,29 @@ nav ul {
   padding: 5rem;
 }
 
+/* locations section */
+
+.locations {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("./img/new-york-page.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.locations-head {
+  width: 90%;
+  margin: auto;
+}
+
+.locations-head h2 {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+}
 @media screen and (max-width: 932px) {
   html {
     font-size: 45%;
@@ -107,5 +136,10 @@ nav ul {
 
   #logo {
     padding: 1rem;
+  }
+
+  .locations-head h3 {
+    background: rgba(19, 28, 39, 0.9);
+    -webkit-text-fill-color: white;
   }
 }
