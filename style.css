@@ -56,7 +56,6 @@ button {
   transition: background 0.6s ease-in;
   border-radius: 5px;
   background: none;
-  border-radius: 30px;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -174,6 +173,38 @@ p {
   padding: 2rem;
 }
 
+/* contact form */
+
+#contact {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper {
+  border-radius: 30px;
+  border: 0.2rem solid;
+  width: 50%;
+}
+
+.form-wrapper label {
+  margin: 2rem;
+}
+
+form button {
+  width: 100%;
+}
+.form-head {
+  text-align: center;
+  padding: 2rem;
+}
+
+.name-form,
+.email-form {
+  padding: 3rem;
+  text-align: center;
+}
 @media screen and (max-width: 932px) {
   html {
     font-size: 55%;
